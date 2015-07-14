@@ -1,0 +1,41 @@
+js －－－－习题1
+
+1、字符串去空格（为String对象函数扩展一个trim函数）
+
+2、数组arr1和arr2，长度不固定，如何从arr1中删除和arr2中重复值的元素？（假设是纯数字的）
+
+3假设不是纯数字而是有其他类型，比如obj、函数等？
+
+4、写出一个classof函数用于类型检测，最后输出为
+
+classof(null) // "Null"
+classof(1)    //“Number"
+classof(“”) // “String"
+classof(false)    //“Boolean"l
+classof({}) // “Object"
+classof(［］)    //“Array”
+…….
+
+5 如何快速获取时间戳
+
+6 ~~5.660在chrome下输出是？有什么作用？
+7 如何把对象转换为数组
+8
+var name = "The Window”;
+var object = {
+    name : "My Object",
+    getNameFunc : function(){
+        return (function(){
+             alert(this.name);
+        })();
+    },
+
+    getName:function(){
+        alert(this.name);
+    }
+};
+object.getNameFunc();  输出？
+object.getName();  输出？
+修改代码把2个都输出My Object
+9 attachEvent addEventListener  第三个参数的作用 说明 有什么作用？
+10 阻止默认事件有哪些？
