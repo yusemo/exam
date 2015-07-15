@@ -12,5 +12,9 @@ function removeDuplicate(arr1, arr2) {
             }
         }
     }
-
 }
+
+
+//因为假设是纯数字的，因此这题可以考虑利用正则匹配
+var arr1 =[1,12,3,5], arr2=[2,44,5,1];
+console.log(arr1.concat(arr2).sort().join('').replace(/(w)1+/g,'').split(''))
