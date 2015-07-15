@@ -25,3 +25,23 @@ function classOf(typeClass) {
         case "object": return "Object";
     }
 }
+
+//这是要打死你的节奏。书本里面的原题
+
+function classof(o){
+     if(o ===null)   return "Null";
+     if(o ===undefine)   return "Undefine";
+    return Obeject.prototype.toString.call(0).slice(8,-1);
+}
+
+classof(null) // "Null"
+classof(1)    //“Number"
+classof(“”) // “String"
+classof(false)    //“Boolean"
+classof({}) // “Object"
+classof([])    //“Array”
+classof(/./) // “Regexp"
+classof(new Date())    //“Date"
+classof(window) // “Window”
+function f(){}
+classof(new f())    //“Object"

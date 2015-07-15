@@ -9,3 +9,7 @@ String.prototype.trim =  function() {
 
     return this.replace(/\s+/g,"");
 };
+
+String.prototype.trim = function(){return this.replace(/^\s+|\s+$/g, "");};
+
+//空格有前后位置的区别 
