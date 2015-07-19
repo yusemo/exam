@@ -1,20 +1,37 @@
+/*body {*/
+
+/*}*/
+
+/*.mod-ju {*/
+    /*border: 1px solid blue;*/
+    /*text-align: center;*/
+/*}*/
+
+/*.lists {*/
+    /*display: inline-block;*/
+    /*width: 150px;*/
+    /*border: 1px solid red;*/
+/*}*/
+
+/*.lists img {*/
+    /*vertical-align: middle;*/
+/*}*/
+
+
 body {
     text-align: center;
 }
-
 .mod-ju {
-    margin: 0 auto;
-    border: 1px solid blue;
-    display: table;
+    top:0; bottom:0; left:0; right:0;
+    position:absolute; margin:auto;
+    height: 50%;
+    width: 50%;
+    border: 1px solid green;
 }
 
 .lists {
-    display: table-cell;
+    display: inline-block;
     width: 150px;
     border: 1px solid red;
-    vertical-align: middle;
-    padding-top: 50px;
 }
 
-.lists img {
-}
