@@ -1,0 +1,27 @@
+.container {
+    margin:0;
+    border: 1px solid green;
+    height: 100%;
+}
+html ,body {
+    height: 100%;
+}
+
+
+.left {
+    float:left;width:200px;margin-right:-200px;
+    border: solid;
+    min-height: 200px;
+    height: 100%;
+}
+
+.right-container {
+
+}
+
+.right {
+    margin-left: 210px;
+    border: solid red;
+    min-height: 200px;
+    height: 100%;
+}

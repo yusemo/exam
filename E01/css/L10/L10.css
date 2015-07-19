@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+}
+
+.mod-ju {
+    margin: 0 auto;
+    border: 1px solid blue;
+    display: table;
+}
+
+.lists {
+    display: table-cell;
+    width: 150px;
+    border: 1px solid red;
+    vertical-align: middle;
+    padding-top: 50px;
+}
+
+.lists img {
+}
