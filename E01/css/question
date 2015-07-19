@@ -4,6 +4,9 @@ css－－－－习题1
 块级元素在显示时会占用全部宽度，一个块级元素占一行；
 而行内元素在显示时会共用宽度，一个行内元素显示出来后不会换行，而是紧跟着显示接下来的元素。
 
+（2）.块级元素可以包含行内元素和块级元素。行内元素不能包含块级元素。
+（3）.行内元素与块级元素属性的不同，主要是盒模型属性上
+（4）行内元素设置width无效，height无效(可以设置line-height)，margin上下无效，padding上下无效
 
 2、line-height取值及区别
 normal：浏览器默认值
@@ -12,10 +15,15 @@ length：n em，是element字体高度的倍数
 百分比：n ％，是element 字体的 n％
 
 
+区别就在于继承的问题上。有单位的是根据父元素的字体大小计算出行高，并且子元素依然沿用这个计算后的行高。
+而没有但问的是根据子元素自己字体的大小去乘以1.5来计算行高。另，1.5em等也是按照150%的情况来算的。
+
+
 3、一个元素如果设置了position:absolute , 我又设置了margin-top 会怎么样
 假设 margin-top: n px;
 若该元素的最近已定位元素存在，则相对于此已定位元素向下移动 n px，若不存在，则相对于初始包含块向下移动npx.
 
+和设置top的值效果一致。
 
 4、每个HTML文件里开头都有个很重要的东西，Doctype，是干什么有什么用？
 
@@ -23,7 +31,9 @@ length：n em，是element字体高度的倍数
 
 
 5、BFC（什么叫bfc，如何形成）
-
+http://www.iyunlu.com/view/css-xhtml/55.html
+http://kayosite.com/block-formatting-contexts-in-detail.html
+请读通读透
 
 6、css sprites(又称雪碧图)，如何使用，有什么作用？
 
@@ -32,7 +42,7 @@ length：n em，是element字体高度的倍数
 优点：
 1.可以减少网络请求次数，提高加载速度，
 2.在网站流量大的情况下有较好的节约流量的效果。
-3.将多个图标整合到一张图片中，便于对图标进行增删改。
+3.将多个图标整合到一张图片中，便于对图标进行增删改。（不利于修改的亲这个就是它的缺点。不过一般不需要修改的才做成雪碧图）
 
 缺点：
 1.网站流量不高的话，上面的优点都是缺点。
@@ -45,6 +55,9 @@ length：n em，是element字体高度的倍数
     或者 overflow: hidden
     或者 overflow:auto
 
+http://kayosite.com/remove-floating-style-in-detail.html  参考 还有学习什么叫闭合浮动参考之前那篇文章
+
+http://www.imooc.com/space/teacher/id/197450   熟读张大神的各项教程。请死命的读。
 
 
 
